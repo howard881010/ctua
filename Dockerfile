@@ -24,7 +24,7 @@ WORKDIR /root/PROJECT_NAME/
 RUN git submodule update --init --recursive
 
 # Install conda environment
-RUN conda update --all
+# RUN conda update --all
 RUN conda env create -n PROJECT_NAME --file environment.yml
 RUN conda clean -qafy
 
