@@ -1,4 +1,4 @@
-name: CTUA
+name: ctua
 channels:
   - conda-forge
   - nvidia

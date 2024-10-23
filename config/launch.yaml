@@ -1,0 +1,30 @@
+project_name: ctua
+model:
+  gpt:
+    command: >
+      sudo apt update
+    cpu_count: 10
+    gpu_count: 1
+    memory: 60
+# irrelevant:
+dataset:
+  medical:
+    hparam:
+      _fn: Howard881010/Yelp-dataset
+  mimic:
+    hparam:
+      _fn: mimic.txt
+# irrelevant:
+run:
+  model: [gpt]
+  dataset: [medical]
+# file:
+#   - ./axolotl/examples/llama-2/myconfig.yml
+# hostname_whitelist:
+#   - hcc-chase-shor-c4715.unl.edu
+prefix: test2
+special_gpu: a100
+file: []
+gpu_count: 1
+# cpu_count: 10
+# memory: 10

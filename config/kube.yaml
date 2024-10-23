@@ -1,0 +1,31 @@
+project_name: ctua
+namespace: spatiotemporal-decision-making
+user: howard
+registry_host: gitlab-registry.nrp-nautilus.io
+ssh_host: gitlab-ssh.nrp-nautilus.io
+ssh_port: 30622
+conda_home: /opt/conda
+image: gitlab-registry.nrp-nautilus.io/howard/ctua:latest
+hostname_whitelist:
+  - node-2-2.sdsc.optiputer.net
+  - node-2-9.sdsc.optiputer.net
+  - node-1-3.sdsc.optiputer.net
+  - node-2-1.sdsc.optiputer.net
+  - node-1-4.sdsc.optiputer.net
+  - gp-engine.beocat.ksu.edu
+  - sphinx.sdstate.edu
+  # - k8s-a6000-02.calit2.optiputer.net
+  - gpn-fiona-mizzou-6.rnet.missouri.edu
+  - gpn-fiona-mizzou-5.rnet.missouri.edu
+  - gpn-fiona-mizzou-3.rnet.missouri.edu
+  # - rci-nrp-gpu-04.sdsu.edu
+  - hcc-prp-c5038.unl.edu
+  - hcc-prp-c5036.unl.edu
+  # - gpu-02.nrp.mghpcc.org
+  - gpengine-uark.areon.net
+  - hcc-gpengine-shor-c5303.unl.edu
+  - discover-nrp-01.sdccd.edu
+  - nautilus02.hsrn.nyu.edu
+  - k8s-a6000-01.unm.edu
+  - k8s-gpu-5.ucsc.edu
+  - rci-nrp-gpu-05.sdsu.edu
