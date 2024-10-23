@@ -24,7 +24,7 @@ run:
 #   - hcc-chase-shor-c4715.unl.edu
 prefix: test2
 special_gpu: a100
-file: []
-gpu_count: 1
+file: [DPO/utils.py, DPO/preference_datasets.py]
+gpu_count: 2
 # cpu_count: 10
 # memory: 10

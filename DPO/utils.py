@@ -166,6 +166,7 @@ class TemporarilySeededRandom:
         self.stored_np_state = np.random.get_state()
 
         # Set the random seed
+        print("Setting seed", self.seed, type(self.seed))
         random.seed(self.seed)
         np.random.seed(self.seed)
 

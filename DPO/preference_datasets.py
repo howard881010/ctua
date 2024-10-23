@@ -313,7 +313,7 @@ def get_batch_iterator(names: List[str],
         datasets.logging.set_verbosity_error()
 
     with TemporarilySeededRandom(seed):
-        permutation_seeds = iter(np.random.randint(0, 2**32, size=1000000))
+        permutation_seeds = iter(np.random.randint(0, 2**25, size=1000000))
         flat_data = []
         for name in names:
             truncation_mode = 'keep_end' if name == 'hh' else 'keep_start'
@@ -331,7 +331,7 @@ def get_batch_iterator(names: List[str],
                 print(f'Finished generating {n_epochs} epochs on {split} split')
             break
         if shuffle:
-            with TemporarilySeededRandom(next(permutation_seeds)):
+            with TemporarilySeededRandom(int(next(permutation_seeds))):
                 random.shuffle(flat_data)
 
         batch = []
